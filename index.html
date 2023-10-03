@@ -8,19 +8,33 @@
 <body>
     <h1>Hello, Forms!</h1>
 <!--The <form> element 
-This element formally defines a form. It's a container element like a <div> or <p> element, but it also supports some specific attributes to configure the way the form behaves. 
+This element formally defines a form. It's a container element like a <div> or <p> element, 
+but it also supports some specific attributes to configure the way the form behaves. 
+
 Technically, all of its attributes are optional.
-     It's standard practice to always set at least the action attribute and the method attribute:
+It's standard practice to always set at least the action attribute and the method attribute:
 
 The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
-The method attribute defines which HTTP method to send the data with. Browsers support only two values for this attribute: "get" and "post". You will use "post" 99% of the time.
-For now, add the above <form> element above into the HTML body after the <h1> element that reads "Hello, Forms!".
+
+The method attribute defines which HTTP method to send the data with. 
+
+Browsers support only two values for this attribute: "get" and "post". 
+
+You will use "post" 99% of the time.
     
-    
-    
-    
-    -->
+-->
         <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+            </fieldset>
 
         </form>
 </body>
